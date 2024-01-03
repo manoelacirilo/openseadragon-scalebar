@@ -1,0 +1,27 @@
+{
+  "name": "openseadragon-scalebar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/openseadragon-scalebar.js",
+  "types": "lib/openseadragon-scalebar.d.ts",
+  "scripts": {
+    "clear": "rm -rf ./lib && mkdir lib",
+    "build": "npm run clear && tsc --declaration",
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/openseadragon-scalebar.ts"
+  },
+  "keywords": [
+    "openseadragon",
+    "osd",
+    "plugin",
+    "scalebar"
+  ],
+  "author": "Manoela Cirilo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.9.2",
+    "@types/openseadragon": "^3.0.10",
+    "openseadragon": "^4.1.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.2"
+  }
+}
